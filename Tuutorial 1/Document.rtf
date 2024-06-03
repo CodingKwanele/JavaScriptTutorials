@@ -1,0 +1,147 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\*\generator Riched20 10.0.22621}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs32\lang9 Stage 1: Planning and Requirement Analysis\par
+\b0\fs22 Requirement Gathering\par
+\b Task List:\b0\par
+Display a list of all tasks.\par
+\b Task Page:\b0\par
+Separate tasks into categories such as Work, Personal Life, and Entertainment.\par
+\b New Task:\b0\par
+Insert a new task with relevant details.\par
+\b Editing a Task:\b0\par
+Ability to edit an existing task.\par
+\b Task Progress:\b0\par
+Show progress and priority of tasks.\par
+\b Due Date:\b0\par
+Add due dates to tasks.\par
+\b Mark as Completed:\b0\par
+Mark tasks as completed.\par
+\b Reminders:\b0\par
+Send reminders as the due date approaches.\par
+\b User Authentication:\par
+\b0 Save tasks across devices.\par
+\b Data Persistence:\par
+\b0 Use Web Storage APIs to persist tasks:\par
+Session storage for temporary tasks.\par
+Local storage for permanent tasks.\par
+\b Task Deletion:\b0\par
+Add the ability to delete tasks.\par
+\b Task Reordering:\b0\par
+Allow users to reorder tasks via drag-and-drop.\par
+\b Search Functionality:\b0\par
+Implement a search bar to quickly find tasks.\par
+\b Task Details:\par
+\b0 Allow adding detailed descriptions to tasks.\par
+\b Color Coding:\par
+\b0 Enable color coding for different task categories.\par
+\b Subtasks:\b0\par
+Support for adding subtasks within a task.\par
+\b\fs32 User Stories\par
+\b0\fs22 a. As a user, I want to add new tasks so I can keep track of things I need to do.\par
+b. As a user, I want to decide if I want to display the page for session storage or local storage.\par
+c. As a user, I want to edit existing tasks to update their details.\par
+d. As a user, when I add a task, I need to add the name of the task, priority, and due date if any.\par
+e. As a user, I want to be able to mark tasks as completed.\par
+f. As a user, I want to see completed tasks and get their average.\par
+g. As a user, I want to delete tasks that I no longer need.\par
+h. As a user, I want to reorder tasks by priority or due date.\par
+i. As a user, I want to search for tasks by keywords.\par
+j. As a user, I want to add detailed descriptions to tasks.\par
+k. As a user, I want to color code tasks based on their category.\par
+l. As a user, I want to add subtasks within a main task for better organization.\par
+m. As a user, I want to receive reminders for upcoming due dates.\par
+n. As a user, I want to track the progress of my tasks and see how much is completed.\par
+o. As a user, I want to log in and access my tasks across multiple devices.\par
+\par
+\b\fs36 Non-Functional Requirements\b0\fs22\par
+The app should be responsive and work on both desktop and mobile devices.\par
+The app should load quickly and have a user-friendly interface.\par
+The app should handle data efficiently to prevent the loss of tasks.\par
+The app should be scalable to handle a large number of tasks without performance degradation.\par
+The app should ensure data security, especially with user authentication.\par
+The app should work smoothly across different browsers.\par
+The app should be accessible to users with disabilities, adhering to web accessibility standards.\par
+The app should offer basic functionality offline and sync data when back online.\par
+\par
+\par
+\par
+\par
+\par
+\par
+\b\fs32 Stage-2: Defining Requirements\b0\fs22\par
+\ul Software Requirement Specification (SRS)\par
+\ulnone\b\fs24 1. Introduction\b0\fs22\par
+\b 1.1 Purpose\b0\par
+The purpose of this document is to specify the functional and non-functional requirements for the To-Do List app. It provides a comprehensive description of the software's functionality, ensuring that the final product meets the needs and expectations of the users and stakeholders.\par
+\b\par
+1.2 Scope\par
+\b0 This SRS document covers all the features and functionalities of the To-Do List app, including task management, user authentication, and data persistence. It also outlines the non-functional requirements related to performance, usability, and security.\par
+\par
+\b 1.3 Definitions, Acronyms, and Abbreviations\par
+\b0 SRS: Software Requirement Specification\par
+UI: User Interface\par
+API: Application Programming Interface\b\par
+1.4 References\par
+\b0 Market analysis reports\par
+Customer feedback\par
+Industry standards for web applications\par
+\b 2. Overall Description\par
+\ul 2.1 Product Perspective\ulnone\b0\par
+The To-Do List app is a standalone web application designed to help users manage their tasks efficiently. It will leverage modern web technologies and follow best practices in web development.\par
+\par
+\ul\b 2.2 Product Functions\par
+\ulnone\b0 The main functions of the To-Do List app include:\par
+Task creation, editing, deletion, and completion\par
+Task categorization (Work, Personal Life, Entertainment)\par
+Task prioritization and progress tracking\par
+Due date and reminder notifications\par
+User authentication for task synchronization across devices\par
+Data persistence using web storage APIs\par
+2.3 User Characteristics\par
+The primary users of the To-Do List app are individuals who need to manage their daily tasks. They should be familiar with basic web navigation and have access to modern web browsers.\par
+\par
+\ul\b 2.4 Constraints\ulnone\b0\par
+The app must be compatible with major web browsers.\par
+The app must be responsive and work on various screen sizes.\par
+Data should be stored securely to protect user privacy.\par
+\ul\b 3. Specific Requirements\ulnone\b0\par
+3.1 Functional Requirements\par
+\ul\i Task Management:\ulnone\i0\par
+Users can create new tasks with a name, priority, and due date.\par
+Users can edit existing tasks.\par
+Users can delete tasks.\par
+Users can mark tasks as completed.\par
+Tasks can be categorized into Work, Personal Life, and Entertainment.\par
+\ul\i User Interface:\ulnone\i0\par
+The app should display tasks in a list format.\par
+The app should provide a separate page for each task category.\par
+The app should allow users to reorder tasks via drag-and-drop.\par
+The app should include a search bar to find tasks quickly.\par
+The app should enable color coding for different task categories.\par
+\ul\i Data Persistence:\par
+\ulnone\i0 Tasks should be stored in session storage for temporary tasks.\par
+Tasks should be stored in local storage for permanent tasks.\par
+The app should automatically display previously added tasks on page reload.\par
+\ul\i Notifications:\ulnone\i0\par
+The app should send reminders for tasks as their due dates approach.\par
+\ul\b\i User Authentication:\ulnone\b0\i0\par
+Users should be able to create accounts and log in.\par
+Tasks should be synchronized across devices when the user is logged in.\par
+\ul\b\fs24 3.2 Non-Functional Requirements\par
+\b0\i\fs22 Performance:\ulnone\i0\par
+The app should load quickly and perform efficiently, even with a large number of tasks.\par
+\ul\i Usability:\par
+\ulnone\i0 The app should have an intuitive and user-friendly interface.\par
+The app should be responsive and accessible on both desktop and mobile devices.\par
+\ul\i Security:\par
+\ulnone\i0 User data should be stored securely, especially when using authentication features.\par
+\ul\i Scalability:\par
+\ulnone\i0 The app should be designed to handle a growing number of tasks and users without performance degradation.\par
+\ul\i Cross-Browser Compatibility:\par
+\ulnone\i0 The app should work smoothly on all major web browsers.\par
+\ul\i Accessibility\ulnone\i0 :\par
+The app should adhere to web accessibility standards to be usable by people with disabilities.\par
+\ul\b 4. Approval\par
+\ulnone\b0 This document requires approval from key stakeholders, including customers, market analysts, and project managers. Once approved, it will serve as the foundation for the design, development, and testing phases of the project.\par
+}
+ 

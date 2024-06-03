@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced To-Do List App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="container">
+        <section id="login-section">
+            <h1>Login</h1>
+            <input type="text" id="username" placeholder="Enter username" aria-label="Username">
+            <button onclick="login()">Login</button>
+        </section>
+        <section id="app-section" style="display: none;">
+            <nav class="sidebar">
+                <h2>Menu</h2>
+                <ul>
+                    <li><button onclick="showSection('local-todo')">Local Storage To-Do</button></li>
+                    <li><button onclick="showSection('session-todo')">Session To-Do List</button></li>
+                    <li><button onclick="showSection('completed-tasks')">See Completed Tasks</button></li>
+                    <li><button onclick="showSection('uncompleted-tasks')">See Uncompleted Tasks</button></li>
+                </ul>
+                <button onclick="logout()">Logout</button>
+                <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+            </nav>
+            <main class="content">
+                <section id="local-todo" class="todo-section" style="display: none;">
+                    <button onclick="goBack()">Back</button>
+                    <h2>Local To-Do List</h2>
+                    <div class="task-input">
+                        <input type="text" id="local-todo-input" placeholder="Add a new task" aria-label="New Task">
+                        <select id="local-category" aria-label="Category">
+                            <option value="Work">Work</option>
+                            <option value="Personal Life">Personal Life</option>
+                            <option value="Entertainment">Entertainment</option>
+                        </select>
+                        <select id="local-priority" aria-label="Priority">
+                            <option value="High">High</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Low">Low</option>
+                        </select>
+                        <input type="date" id="local-due-date" aria-label="Due Date">
+                        <input type="text" id="local-description" placeholder="Add a description" aria-label="Description">
+                        <button onclick="addLocalTodo()">Add Task</button>
+                    </div>
+                    <ul id="local-todo-list"></ul>
+                </section>
+                <section id="session-todo" class="todo-section" style="display: none;">
+                    <button onclick="goBack()">Back</button>
+                    <h2>Session To-Do List</h2>
+                    <div class="task-input">
+                        <input type="text" id="session-todo-input" placeholder="Add a new task" aria-label="New Task">
+                        <select id="session-category" aria-label="Category">
+                            <option value="Work">Work</option>
+                            <option value="Personal Life">Personal Life</option>
+                            <option value="Entertainment">Entertainment</option>
+                        </select>
+                        <select id="session-priority" aria-label="Priority">
+                            <option value="High">High</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Low">Low</option>
+                        </select>
+                        <input type="date" id="session-due-date" aria-label="Due Date">
+                        <input type="text" id="session-description" placeholder="Add a description" aria-label="Description">
+                        <button onclick="addSessionTodo()">Add Task</button>
+                    </div>
+                    <ul id="session-todo-list"></ul>
+                </section>
+                <section id="completed-tasks" class="todo-section" style="display: none;">
+                    <button onclick="goBack()">Back</button>
+                    <h2>Completed Tasks</h2>
+                    <ul id="completed-tasks-list"></ul>
+                </section>
+                <section id="uncompleted-tasks" class="todo-section" style="display: none;">
+                    <button onclick="goBack()">Back</button>
+                    <h2>Uncompleted Tasks</h2>
+                    <ul id="uncompleted-tasks-list"></ul>
+                </section>
+            </main>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="particles-config.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
